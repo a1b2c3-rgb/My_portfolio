@@ -1,0 +1,124 @@
+.todo-app h2 img {
+    height: 20px;
+    width: 20px;
+}
+.todo-app h2 {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+html {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #153677, #4e085f );
+    
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    
+}
+.todo-app {
+    border: 1px solid blue;
+    width: 300px;
+    display: flex;
+    border-radius: 10px;
+    background-color: white;
+    padding: 15px 20px 10px;
+    flex-direction: column;
+    
+}
+.tasks {
+    position: relative;
+}
+button {
+    background: rgba(242, 9, 9, 0.3);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    padding: 8px;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    right: 1px;
+    width: 60px;
+
+    
+}
+
+input[type="text"] {
+    width: 280px;
+    border-radius: 20px;
+    padding: 7px;
+    
+
+}
+button:hover {
+    background: rgb(205, 98, 98);
+}
+ul {
+    padding: 0;       /* This moves the whole list back to the left edge */
+    margin-top: 20px;
+}
+ul li {
+    padding: 9px 25px;
+    list-style: none;
+    font-weight: lighter;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    gap: 5px;
+    
+    
+}
+ul li span { 
+    
+    
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 20px ;
+    font-weight: 70px;
+    
+    
+}
+
+ul li span:hover {
+    background-color: gray;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    text-align: center;
+    transition: none;
+    color: white;
+    
+}
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-image: url(Icon/unchecked.png);
+    display: inline-block;
+    left: 0px;
+    top: 12px;
+    background-color: gray;
+    background-size: cover;
+    background-position: center;
+}
+ul li.checked {
+    color: gray;
+    text-decoration: line-through;
+}
+ul li.checked::before {
+    background-image: url(Icon/checked.png);
+}
+ul li.checked span {
+    text-decoration: none !important;
+    display: inline-block;
+}
