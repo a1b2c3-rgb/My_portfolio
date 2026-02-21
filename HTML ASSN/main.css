@@ -1,0 +1,275 @@
+html {
+    scroll-behavior: smooth;
+}
+section {
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding: 80px 40px;
+}
+h1 {
+    text-align: center;
+    color: rgb(0, 68, 255);
+
+}
+body {
+    background-color: rgb(9, 9, 9);
+    text-align: center; 
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+#projects {
+    color:rgb(225, 224, 234)
+}
+header {
+    position: sticky;
+    position: -webkit-sticky; 
+    top: 0;
+    width: 100%;
+    background: white;
+    padding: 10px 20px;
+    z-index: 1000;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: red;
+
+}
+
+#About {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#About .introduction {
+    text-align: left;  
+    padding: 20px 20px;
+}
+.roll {
+    flex: 1;
+    gap: 70px;
+    display: flex;
+    padding: 30px 10px;
+    position: relative;
+    font-size: medium;
+}
+.client p, .year p, .role p {
+    color: gray;
+    
+    text-transform: uppercase;
+}
+#About .image img{
+    border: 15px solid #4a4a4a; /* Thicker, lighter gray */
+    display: block;
+}
+#contact {
+    text-align: left;
+    padding: 20px;
+    display: flex;
+    flex: 1;
+    gap: 20px;
+    background-color: rgba(192, 189, 189, 0.245);
+    justify-content: center;
+    align-items: center;
+}
+.info-box {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+    #experiences {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #experiences .me img {
+        border: 15px solid grey;
+        display: block;
+        
+    }
+    #experiences .experiences {
+        text-align: left;
+        margin-bottom: 80px;
+    }
+    .proof {
+        display: flex;
+        gap: 20px;
+        position: relative;
+        padding: 20px ;
+        margin: 0 auto;
+        
+    }
+    .done, .clients, .years {
+        flex: 1;
+       background: rgb(23, 22, 22);
+        text-align: center;
+        padding: 30px 10px;
+        position: relative;
+        height: 100px;
+        
+    }
+    .done::before, .clients::before, .years::before {
+        content: '';
+        position: absolute;
+        top: 1px;
+        left: 1px;
+        height: 20px;
+        width: 20px;
+        border-left:3px solid rgb(240, 46, 46) ;
+        border-top: 3px solid rgb(224, 43, 73);
+    }
+    .done::after, .clients::after, .years::after {
+        content: '';
+        position: absolute;
+        bottom: 1px;
+        right: 1px;
+        height: 20px;
+        width: 20px;
+        border-right: 2px solid rgb(172, 165, 165);
+        border-bottom: 2px solid rgb(150, 147, 147);
+    }
+    .done span, .clients span, .years span {
+        font-weight: bold;
+        font-size: 50px;
+    }
+    .done p, .clients p, .years p {
+        color: gray;
+        font-size: small;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    #projects {
+        display: flex;
+        gap: 30px;
+        padding: 80px 40px;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+    .skills {
+        flex: 1;
+        padding: 30px 10px;
+        position: relative;
+        text-align: left;
+        border: 2px solid rgb(99, 99, 101);
+        background: rgb(67, 66, 66);
+    }
+    .card {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        margin: 0 auto 40px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        text-align: center;
+       
+        
+    }
+    .card::before {
+        content: '';
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        height: 80px;
+        width: 80px;
+        z-index: 2;
+        border: 2px solid rgb(232, 104, 125);
+    }
+    .card::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 80px;
+        height: 80px;
+        border: 2px solid rgb(196, 192, 192);
+        z-index: 1;
+    }
+    .card span {
+        position: relative;
+        font-weight: bold;
+        font-size: 40px;
+        top: 0px;
+        left: 0px;
+        z-index: 10;
+
+    }
+    .skills ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .skills li::before{
+        content:'→' ;
+        color: rgb(245, 102, 54);
+        margin-right: 5px;
+    }
+    .skills li {
+        color: gray;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: medium;
+    }
+    #Testimonials {
+        background-color: rgba(209, 203, 203, 0.277);
+    }
+    .testimonies {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        max-width: 1400px;
+        
+        
+    }
+    .testimony {
+        
+        padding: 10px 10px;
+        min-height: 300px;
+        border: 0.1px solid rgba(128, 128, 128, 0.436);
+        background-color: rgb(51, 50, 50);
+    }
+    .quote-icon {
+        color: gray;
+        font-size: 50px;
+        font-weight: bold;
+        text-align: left;
+        font-family: Georgia, 'Times New Roman', Times, serif ;
+    }
+    .avatar {
+        font-size: 20px;
+        font-weight: bold;
+        background-color: rgb(222, 28, 60);
+        align-items: center;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        padding: 5px 5px;
+        justify-content: center;
+    }
+    .client-info {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        
+    }
+    .client-details {
+        display: flex;
+        flex-direction: column;
+        color: gray;
+        gap: 0;
+        font-size: medium;
+        line-height: 1;
+    }
+    .client-details h4 {
+        margin: 0;
+        font-weight: bold;
+        color: white;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .testimony p {
+        color: rgb(232, 225, 225);
+        font-size: small;
+    }
+
