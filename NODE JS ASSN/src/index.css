@@ -1,0 +1,238 @@
+.card{
+ border: 1px solid hsl(0, 4%, 80%); 
+ padding: 20px 10px 10px 20px;
+ width: 200px;
+ box-shadow: 5px 5px 5px hsl(0, 2%, 67%);
+ border-radius: 20px;
+ display: inline-block;
+ text-align: center;
+ margin: 10px;
+
+}
+.card .profilepc {
+  max-width: 50%;
+  height: auto;
+  border-radius: 50%;
+  padding-bottom: 10px;
+}
+.card .belong {
+  font-size: 20px;
+  color: rgb(91, 90, 90);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.card .spirit {
+  font-size: small;
+  color: rgb(184, 132, 35);
+}
+.student {
+  border: 1px solid rgba(222, 217, 217, 0.719);
+  width: 200px;
+  box-shadow: 5px 5px 5px ;
+  margin: 20px;
+  background-color: rgb(229, 220, 220);
+  border-radius: 10px;
+  
+}
+.welcome-message {
+  background-color: rgb(112, 179, 12);
+  width: 300px;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+}
+.prompt {
+  background-color: rgb(203, 25, 25);
+  width: 300px;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+}
+.color-container{
+  text-align: center;
+}
+.mycolors{
+  width: 200px;
+  height: 150px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 20px;
+  border: 2px solid gray;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px ;
+  transition: 0.2s ease;
+}
+input[type="color"]{
+  border-radius: 10px;
+  border: 2px solid gray;
+}
+.color-container label{
+  font-size: 30px;
+  font-weight: bold;
+}
+.todolist{
+  text-align: center;
+  background-color: rgba(237, 234, 234, 0.708);
+  width: 500px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid rgb(195, 191, 191);
+}
+.move{
+  padding: 2px;
+  background-color: rgb(31, 125, 5);
+  color: white;
+  border-radius: 10px;
+  margin: 2px;
+  cursor: pointer;
+}
+.move:hover{
+  background-color: rgb(41, 169, 45);
+}
+.move:active{
+  background-color: rgb(112, 223, 147);
+}
+.delete{
+background-color: rgb(176, 6, 6);
+color: white;
+border-radius: 8px;
+padding: 2px;
+margin: 3px;
+}
+.delete:hover{
+  background-color: rgb(219, 24, 24);
+}
+.delete:active{
+  background-color: rgba(225, 41, 41, 0.651);
+}
+ol{
+  background-color: white;
+  border: 1px solid rgb(209, 203, 203);
+  text-align: left;
+  padding: 5px;
+  width: 400px;
+  margin: auto;
+  margin-top:10px ;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(77, 72, 72);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ 
+}
+span{
+  flex: 1;
+  margin: 5px;
+  border: 0.5px solid rgb(197, 190, 190);
+  
+}
+.listtodo li{
+  display: flex;
+    align-items: center;
+    margin-bottom: 1px;
+    gap: 0;
+    padding: 2px;
+}
+.clock{
+  background-image: url(profile.jpg);
+  background-repeat: no-repeat;
+  max-width: 90%;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  
+}
+.time-clock{
+  font-size: 80px;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  border: none;
+
+}
+.stopwatch{
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+  background-color: rgba(181, 180, 180, 0.477);
+  width: 500px;
+  border-radius: 20px;
+  padding: 20px;
+}
+.timer{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  
+}
+.stopwatch h1{
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  color: rgb(101, 114, 124);
+}
+.time-buttons button{
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  margin: 5px;
+  border-radius: 10px;
+  border: none;
+  align-items: center;
+  padding: 5px 5px;
+  cursor: pointer;
+}
+.time-buttons{
+text-align: center;
+}
+.start-button{
+  background-color: rgb(8, 195, 8);
+}
+.start-button:hover{
+  background-color: rgb(6, 159, 6);
+}
+.start-button:active{
+   background-color: rgb(7, 105, 7);
+}
+.stop-button{
+  background-color: rgb(225, 16, 16);
+}
+.stop-button:hover{
+  background-color: rgb(182, 12, 12);
+}
+.stop-button:active{
+   background-color: rgb(141, 5, 5);
+}
+.reset-button{
+  background-color: rgb(62, 53, 236);
+}
+.reset-button:hover{
+  background-color: rgb(35, 13, 179);
+}
+.reset-button:active{
+   background-color: rgb(6, 14, 125);
+}
+.screen{
+  border: 5px solid ;
+  width: 300px;
+  align-items: center;
+  margin: auto;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: rgba(165, 171, 165, 0.682);
+}
